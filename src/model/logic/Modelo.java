@@ -43,17 +43,18 @@ public class Modelo {
 	 * Requerimiento de agregar dato
 	 * @param dato
 	 */
-	public void agregar(String dato)
+	public void agregar(Integer dato)
 	{	
 		datos.agregar(dato);
 	}
 	
 	/**
 	 * Requerimiento buscar dato
+	 * @param <T>
 	 * @param dato Dato a buscar
 	 * @return dato encontrado
 	 */
-	public String buscar(String dato)
+	public <T> Comparable buscar(Integer dato)
 	{
 		return datos.buscar(dato);
 	}
@@ -63,7 +64,7 @@ public class Modelo {
 	 * @param dato Dato a eliminar
 	 * @return dato eliminado
 	 */
-	public String eliminar(String dato)
+	public <T> Comparable eliminar(Integer dato)
 	{
 		return datos.eliminar(dato);
 	}
